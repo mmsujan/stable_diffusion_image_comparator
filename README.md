@@ -1,6 +1,6 @@
 ## Installation
 
- - Clone "stable_diffusion_image_comparator"
+ - Clone "stable_diffusion_image_comparator" (git clone https://github.com/mmsujan/stable_diffusion_image_comparator)
  - cd to "stable_diffusion_image_comparator" directory
  - Open Anaconda prompt ( Recommended)
  
