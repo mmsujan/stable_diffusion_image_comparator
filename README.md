@@ -1,8 +1,8 @@
 ## Installation
 
- - Clone "stable_diffusion_image_comparator" (git clone https://github.com/mmsujan/stable_diffusion_image_comparator)
- - cd to "stable_diffusion_image_comparator" directory
+ - Clone "stable_diffusion_image_comparator"
  - Open Anaconda prompt ( Recommended)
+ - cd to "stable_diffusion_image_comparator" directory
  
 Run following command to create conda environment
  
@@ -18,6 +18,7 @@ pip install -r requirements.txt
  - Unzip " models" directory and put it inside "stable_diffusion_image_comparator"
  - From conda or command prompt, cd path to "stable_diffusion_image_comparator" directory  
  
+ Sample Run: 
  ```
  python image_compare.py
  ```
@@ -26,13 +27,19 @@ pip install -r requirements.txt
  ```
  python image_compare.py --thresholds 5.0 10.0 15.0
  ```
- - You need adjust "--correlation_const" flag based on threshold values. When threshold values are small, corelation constant value should be higher. For an example,
+ - Command line argument options:
  
-  ```
- python image_compare.py --thresholds 5.0 10.0 15.0 --correlation_const 2.0
- ```
+```
+usage: image_compare.py [-h] [--thresholds [THRESHOLDS [THRESHOLDS ...]]] [--correlation_const CORRELATION_CONST]
+                        [--platform PLATFORM] [--verbosity]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --thresholds [THRESHOLDS [THRESHOLDS ...]]
+                        Maximum difference between two pixel.
+  --correlation_const CORRELATION_CONST
+                        When a threshold value is small, corelation constant should be higher
+  --platform PLATFORM   Platform: DG2 or MTLH
+  --verbosity           Print error details
  
- - Platform can be either "DG2 or MTL". For MTL platform, use  "--platform MTL" flag as a command argument 
- - Golden images are kept inside "goldenImages" directory.  
- - After running the app, a new image will be created inside the "generatedImages" directory. Then, compare the generated image with golden image pixel by pixel. 
- 
+```
