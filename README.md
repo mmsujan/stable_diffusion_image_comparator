@@ -39,7 +39,7 @@ optional arguments:
                         Maximum difference between two pixel.
   --correlation_const CORRELATION_CONST
                         When a threshold value is small, corelation constant should be higher
-  --platform PLATFORM   Platform: DG2 or MTLH
+  --platform PLATFORM   Platform: DG2 or MTL
   --verbosity           Print error details
  
 ```

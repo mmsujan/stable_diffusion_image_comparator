@@ -114,7 +114,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--thresholds", default=[5.0, 10.0, 15.0], nargs="*", type=float, help="Maximum difference between two pixel. ")
     parser.add_argument("--correlation_const", default=2.0, type=float, help="When a threshold value is small, corelation constant should be higher")
-    parser.add_argument("--platform", default="DG2", type=str, help="Platform: DG2 or MTLH")
+    parser.add_argument("--platform", default="DG2", type=str, help="Platform: DG2 or MTL")
     parser.add_argument("--verbosity", action="store_true", help="Print error details")
     args = parser.parse_args()
     run_comparator(args.platform, args.thresholds, args.correlation_const, args.verbosity)
