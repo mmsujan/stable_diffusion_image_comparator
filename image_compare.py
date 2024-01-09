@@ -52,7 +52,7 @@ def compare(platform, thresholds, corelation_factor, verbosity):
             for threshold in thresholds:
                 difference_with_threshold  = 0
                 difference_with_threshold = (np.abs(img_a_array - img_b_array) >= threshold).sum()
-                if threshold == 0 and difference_with_threshold > 1:
+                if threshold == 0 and difference_with_threshold > 0:
                     err_code = ERROR
                     if verbosity:
                         print("Threshold = ", threshold, "Fail!")
