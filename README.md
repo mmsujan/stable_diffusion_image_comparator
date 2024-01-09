@@ -25,7 +25,7 @@ pip install -r requirements.txt
  
  - You can set different threshold values as per requirement. For an example:
  ```
- python image_compare.py --thresholds 5.0 10.0 15.0
+ python image_compare.py --thresholds 15.0 10.0 5.0
  ```
  - Command line argument options:
  
