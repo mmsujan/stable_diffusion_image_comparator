@@ -15,7 +15,7 @@ For python environment, open command prompt, and cd to "stable_diffusion_image_c
 pip install -r requirements.txt
 ```
 ## Run Test
- - Copy Stable Diffusion 1.5 models from ( \\ROVSIYEN-DESK9\stable_diffusion_1.5) 
+ - Copy Stable Diffusion 1.5 models from ("\\ROVSIYEN-DESK9\stable_diffusion_1.5") 
  - Unzip " models" directory and put it inside "stable_diffusion_image_comparator"
  - From conda or command prompt, cd path to "stable_diffusion_image_comparator" directory  
  
