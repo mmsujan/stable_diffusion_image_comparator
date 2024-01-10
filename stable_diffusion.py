@@ -141,7 +141,7 @@ def run_inference(
 ):
     ort.set_default_logger_severity(3)
     #Disable model loading progress bar
-    diffusers.utils.logging.disable_progress_bar()
+    #diffusers.utils.logging.disable_progress_bar()
     print("Loading models into ORT session...")
     sess_options = ort.SessionOptions()
     sess_options.enable_mem_pattern = False
@@ -162,7 +162,7 @@ def run_inference(
         optimized_model_dir, provider="DmlExecutionProvider", sess_options=sess_options
     )
     # Disable image creation progress bar
-    pipeline.set_progress_bar_config(disable=True)
+    #pipeline.set_progress_bar_config(disable=True)
     if interactive:
         run_inference_gui(pipeline, prompt, num_images, batch_size, image_size, num_inference_steps)
     else:
